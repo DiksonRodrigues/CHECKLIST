@@ -1,0 +1,137 @@
+import { StyleSheet } from 'react-native';
+
+import colors from '../../style/colors';
+import dimensions from '../../style/dimensions';
+
+const { vw, vh } = dimensions;
+
+export const styles = StyleSheet.create({
+  body: {
+    ...StyleSheet.absoluteFillObject,
+    flex: 1,
+    backgroundColor: colors.bg,
+  },
+  logo: {
+    flex: 0,
+    flexDirection: 'column',
+    alignContent: 'center',
+    alignItems: 'center',
+    paddingVertical: 0,
+  },
+  logoImage: {
+    width: vw / 1.6,
+    height: vh / 2.8,
+    marginVertical: 0,
+  },
+  mobsLogo: {
+    flex: 0,
+    flexDirection: 'column',
+    marginBottom: 30,
+    alignContent: 'center',
+    alignItems: 'center',
+  },
+  mobsLogoImage: {
+    width: 100,
+    marginBottom: 10,
+  },
+  login: {
+    flex: 1,
+    flexDirection: 'column',
+    width: vw,
+    // height: vh,
+    alignItems: 'stretch',
+    alignContent: 'stretch',
+  },
+  loginContent: {
+    flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
+    paddingTop: 20,
+    minHeight: vh / 2,
+    borderRadius: 50,
+    backgroundColor: colors.white,
+  },
+  input: {
+    borderRadius: 25,
+    width: '100%',
+    height: 50,
+    fontSize: 16,
+    color: colors.p_,
+    paddingHorizontal: 20,
+    textAlign: 'center',
+    backgroundColor: colors.bg,
+    marginBottom: 10,
+  },
+  inputFocus: {
+    borderStyle: 'solid',
+    borderWidth: 3,
+    borderColor: colors.green,
+    elevation: 6,
+  },
+  loginForm: {
+    width: '100%',
+    flex: 1,
+    flexGrow: 1,
+    padding: 30,
+  },
+  loginSpinner: {
+    width: '100%',
+    flex: 1,
+    flexGrow: 1,
+    padding: 30,
+    flexDirection: 'row',
+    alignContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonWrap: {
+    width: '100%',
+    flexDirection: 'row',
+    alignContent: 'center',
+    alignItems: 'center',
+    paddingHorizontal: 30,
+    paddingBottom: 34,
+  },
+  buttonEntrar: {
+    width: '100%',
+    height: 60,
+    textAlign: 'center',
+    flex: 0,
+    flexGrow: 0,
+    // borderTopLeftRadius: 40, borderTopRightRadius: 40,
+    borderRadius: 30,
+    backgroundColor: colors.s_,
+  },
+  buttonEntrarTouch: {
+    flex: 1,
+    flexDirection: 'column',
+    height: 60,
+    alignContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonEntrarText: {
+    fontSize: 20,
+    textAlign: 'center',
+    color: '#FFF',
+    textTransform: 'uppercase',
+  },
+  intro: {
+    color: colors.p_,
+    fontWeight: 'bold',
+    fontSize: 18,
+    lineHeight: 20,
+    textAlign: 'center',
+    paddingHorizontal: 10,
+    marginBottom: vh / 16,
+  },
+  loginFunc: {
+    width: '100%',
+    paddingHorizontal: 30,
+    flexDirection: 'row',
+    alignItems: 'stretch',
+    alignContent: 'stretch',
+  },
+});
